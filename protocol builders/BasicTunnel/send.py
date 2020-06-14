@@ -1,5 +1,5 @@
 from scapy.all import *
-from MyTunnelHeader import MyTunnel
+from my_tunnel_header import MyTunnel
 
 def main():
     iface = 'eth0'
