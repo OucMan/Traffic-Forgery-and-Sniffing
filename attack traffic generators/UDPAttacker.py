@@ -18,7 +18,6 @@ class UDPAttacker:
             random_length = random.randint(1000, 1500)
             payload = ''.join([random.choice(string.digits + string.ascii_letters) for i in range(random_length)])
             packet = ip_layer / udp_layer / payload
-            print(packet)
             send(packet)
 
 
